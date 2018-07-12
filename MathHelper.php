@@ -3,14 +3,14 @@
 class MathHelper
 {
 
-	const SCALE_OF_NOTATION = 10;
+    const SCALE_OF_NOTATION = 10;
 
-	/**
-	 * @param string $a 
-	 * @param string $b
-	 *
-	 * @return string $sum
-	 */
+    /**
+     * @param string $a 
+     * @param string $b
+     *
+     * @return string $sum
+     */
     public static function sum($a, $b){
             self::validateNumber($a);
             self::validateNumber($b);
@@ -35,9 +35,9 @@ class MathHelper
         	return strrev($sum);
     }
 
-	/**
-	 * @param string $number 
-	 */
+    /**
+     * @param string $number 
+     */
     protected static function validateNumber($number){
         if(empty($number)){
             throw new Exception('Вводимое значение не может быть пустым');
